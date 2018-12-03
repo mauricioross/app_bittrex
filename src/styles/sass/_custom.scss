@@ -1,0 +1,120 @@
+body {
+    section {
+        margin-right: 1rem;
+        margin-left: 1rem;
+        height: 100%; 
+        
+        //background-color: gainsboro;
+    }
+    footer {
+        width: 100%;
+        height: 5rem; //background-color: gray;
+    }
+}
+
+.sprint {
+    margin: 3rem;
+    box-shadow: 5px 8px 12px dimgrey;
+    height: 40rem;
+    .nombre{
+        h1{
+            font-size: 36px
+        }
+        p{
+            font-size: 24px;
+            font-weight: lighter
+        }
+    }
+    p {
+        padding-top: 1.5rem;
+    }
+    h1 {
+        font-size: 4rem;
+        margin-top: -1rem;
+    }
+    .tile-obj {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 20px 156px 0 156px;
+        position: relative;
+        label{
+            position: absolute;
+            top:-30px;
+            color: white;
+        } 
+    }
+    .objetivos{
+        padding-top: 1rem;
+        color:black;
+        overflow-y: auto;
+    }
+    .riesgos{
+        
+    }
+    .dates {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 60px 0 60px 15px;
+        position: relative;
+        background-color: #D9D9D9;
+        div {
+            margin-top: -35%;
+            font-size: 12px;
+            font-weight: bold
+        }
+    }
+}
+
+
+
+
+//stylos sueltos
+.br-3 {
+    border-radius: 3px;
+}
+
+.table th {
+
+    text-align: center;
+
+}
+
+.table {
+    border-radius: 5px;
+    width: 50%;
+  margin: auto;
+    float: none;
+}
+
+.btn-primary:hover{
+    border-color: #ffffff;
+}
+
+.pagination{
+    li:first-child{
+        a{
+            background-color: #02547D;
+            color: white;
+            padding: 1rem;
+            border-radius: 1rem 0rem 0rem 1rem;
+        }
+    }
+    li{
+        a{
+            background-color: #02547D;
+            color: white;
+            padding: 1rem;
+            border-radius: 0rem 0rem 0rem 0rem;
+        }
+    }
+    li:last-child{
+        a{
+            background-color: #02547D;
+            color: white;
+            padding: 1rem;
+            border-radius: 0rem 1rem 1rem 0rem;
+        }
+    }
+}

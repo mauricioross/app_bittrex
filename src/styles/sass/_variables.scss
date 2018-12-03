@@ -1,0 +1,149 @@
+//
+// Color system
+//
+
+$white:    #fff !default;
+$gray-100: #fafafa !default;
+$gray-200: #F9F8FC !default;
+$gray-300: #EDEDED !default;
+$gray-400: #cbc8d0 !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #444 !default;
+$gray-800: #343a40 !default;
+$gray-900: #17141F !default;
+$black:    #000 !default;
+
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #593196 !default;
+$pink:    #e83e8c !default;
+$red:     #FC3939 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #EFA31D !default;
+$green:   #13B955 !default;
+$teal:    #20c997 !default;
+$cyan:    #016B9D !default;
+
+$primary:       #02547D !default;
+$secondary:     #A991D4 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-200 !default;
+$dark:          $gray-900 !default;
+
+// _COLORES
+// colores principales
+$violeta:       #6A2E92 !important;
+$violeta-hover: #441364 !important;
+$verde:         #628E37 !important;
+$verde-hover:   #466826 !important;
+$naranja:       #EC7900 !important;
+$naranja-hover: #B25B00 !important;
+$celeste:       #018CCD !important;
+$celeste-hover: #016B9D !important;
+$rojo:          #E60D2E !important;
+$rojo-hover:    #B62C38 !important;
+$azul:          #232272 !important;
+$azul-hover:    #141340 !important;
+$footer:        #333D47 !important;
+
+// colores auxiliar es 
+$gris-texto:                #505964 !important;
+$gris-texto-secundario:     #C9D5DB !important;
+$gris-prefooter:            #EDEFF2 !important;
+$amarillo-alertas:          #FCF7D7 !important;
+$violeta-secundario:        #862C5C !important;
+$submenu-mobile:            #EAF2FA !important;
+$menu-mobile:               #F6F7F9 !important;
+$facebook:                  #294883 !important;
+$instagram:                 #D93175 !important;
+$twitter:                   #00B2FF !important;
+$youtube:                   #FF0017 !important;
+$blanco:                    #FFFFFF !important;
+$blanco-hover:              #F5F7FA !important;
+$fondo-ayuda: #FFE5CA !important;
+$fondo-misdatos: #DCEDEA !important;
+$coronado:                  #fbe4cc !important;
+
+
+// colores gradientes
+$grupo-gradiente:               linear-gradient(-42deg, #628E37 0%, #221F73 100%) !important;
+$factoring-gradiente:           linear-gradient(-44deg, #6B2D91 0%, #221F73 100%) !important;
+$corredora-gradiente:           linear-gradient(-45deg, #9B525C 0%, #221F73 100%) !important;
+$travel-inmobiliaria-gradiente: linear-gradient(-44deg, #038CCC 0%, #221F73 100%) !important;
+$inversiones-gradiente:         linear-gradient(-44deg, #34406E 0%, #130528 100%) !important;
+
+// colores con opacidad alfa
+$grupo-alfa:                    linear-gradient(-89deg, rgba(98, 142, 55, 0) 13%, #628E37 100%) !important;
+$factoring-alfa:                linear-gradient(-89deg, rgba(72, 38, 131, 0) 13%, #482683 100%) !important;
+$inmobiliaria-alfa:             linear-gradient(-40deg, rgba(3, 140, 204, 0) 0%, #221F73 100%) !important;
+$inversiones-alfa:              linear-gradient(-89deg, rgba(120, 42, 95, 0) 13%, #782A5F 100%) !important;
+$travel-alfa:                   linear-gradient(-72deg, rgba(3, 140, 204, 0.3) 9%, rgba(34, 31, 115, 0.3) 100%) !important;
+$corredora-alfa:                linear-gradient(-89deg, rgba(236, 121, 0, 0) 15%, #EC7900 100%) !important;
+
+// Options
+
+$enable-rounded: false !default;
+
+// Body
+
+$body-color:                $gray-700 !default;
+
+// Links
+
+$link-hover-color:          $primary !default;
+
+// Fonts
+
+$font-size-base:              0.875rem !default;
+
+// Tables
+
+$table-border-color:          rgba(0, 0, 0, 0.05) !default;
+
+// Forms
+
+$input-focus-border-color:              $primary !default;
+
+// Dropdowns
+
+$dropdown-link-color:               $gray-700 !default;
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $primary !default;
+
+// Navs
+
+$nav-tabs-border-color:             $gray-300 !default;
+$nav-tabs-link-hover-border-color:  $primary !default;
+
+// Navbar
+
+$navbar-padding-y:                  1.2rem !default;
+
+$navbar-dark-hover-color:           rgba($white,.9) !default;
+$navbar-dark-active-color:          rgba($white,.9) !default;
+
+$navbar-light-color:                rgba($black,.4) !default;
+$navbar-light-active-color:         rgba($black,.7) !default;
+$navbar-light-disabled-color:       rgba($black,.2) !default;
+$navbar-nav-link-padding-x: 1.5rem;
+
+// Progress bars
+
+$progress-bg:                       $gray-300 !default;
+$progress-bar-bg:                   $primary !default;
+
+// List group
+
+$list-group-bg:                     $gray-900 !default;
+$list-group-border-color:           transparent !default;
+
+$list-group-hover-bg:               lighten($list-group-bg, 10%) !default;
+$list-group-active-color:           $white !default;
+$list-group-active-bg:              $list-group-bg !default;
+
+$list-group-disabled-color:         lighten($list-group-bg, 30%) !default;
+

@@ -1,0 +1,71 @@
+<div class="row pt-5 d-flex justify-content-center">
+    <div class="col-md-8 col-md-offset-3 mb-2 d-flex justify-content-center">
+        <form class="form-inline">
+            <div class="form-group">
+                <input type="text" class="form-control" ng-model="searchText" placeholder="Search">
+                <button class="btn btn-primary" ng-click="searchText=''">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-12">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>MarketName</th>
+                    <th style="width: 225px">Volume</th>
+                    <th>High</th>
+                    <th>Low</th>
+                    <th>PrevDay</th>
+                    <th>Created</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat-start="market in modelo.markets | filter:searchText | start: (currentPage - 1) * pageSize | limitTo: pageSize "
+                    ng-style="market.expanded==true && {'background-color':'#b5e4e8f5'}">
+                    <td>{{market.MarketName}}</td>
+                    <td class="text-right">{{market.Volume | number:8}}</td>
+                    <td class="text-right">{{market.High | number:8}}</td>
+                    <td class="text-right">{{market.Low | number:8}}</td>
+                    <td class="text-right">{{market.PrevDay | number:8}}</td>
+                    <td class="text-right">{{market.Created | date:"MM/dd/yyyy 'at' h:mma"}}</td>
+                    <td>
+                        <button class="btn btn-primary" ng-click="expandir(market)">{{merket.expanded == true ? 'Ver
+                            menos' : 'Ver Más'}}</button>
+                    </td>
+                </tr>
+                <tr ng-repeat-end ng-if="market.expanded" style="background-color: #b5e4e870">
+                    <td></td>
+                    <td></td>
+                    <td class="text-right" colspan="5">
+                        <div>
+                            <table class="table" style="background-color: white">
+                                <tr>
+                                    <td>Ask</td>
+                                    <td>Bid</td>
+                                    <td>Last</td>
+                                </tr>
+                                <tr>
+                                    <td>{{market.info.Ask | number:8}}</td>
+                                    <td>{{market.info.Bid | number:8}}</td>
+                                    <td>{{market.info.Last | number:8}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-8 col-md-offset-3 m-5">
+        <ul 
+            uib-pagination 
+            total-items="modelo.markets.length" 
+            items-per-page="pageSize" 
+            ng-model="currentPage"
+            max-size="5" 
+            class="d-flex justify-content-end pr-5 mr-3">
+        </ul>
+    </div>
+</div>

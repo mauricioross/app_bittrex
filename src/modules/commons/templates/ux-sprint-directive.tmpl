@@ -1,0 +1,60 @@
+<div class="col-sm-12 col-md-3 sprint mr-3">
+    <div class="row">
+        <div class="col-md-5  nombre" ng-style="{'background-color':sprint.color, 'color':'white'}">
+            <p>SPRINT</p>
+            <h1>{{sprint.idsprint}}</h1>
+
+        </div>
+        <div class="col-md-7 dates" ng-style="{'border-color': 'transparent transparent transparent '+sprint.color}">
+            <div class="align-top">
+                <label class="d-flex justify-content-end">
+                    Desde
+                </label>
+                <label class="d-flex justify-content-end">
+                    {{sprint.desde}}
+                </label>
+                <label class="d-flex justify-content-end">
+                    Hasta
+                </label>
+                <label class="d-flex justify-content-end">
+                    {{sprint.hasta}}
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center" ng-style="{'background-color':sprint.color,'height':'1.8rem'}">
+
+    </div>
+    <div class="row tile-obj justify-content-center" ng-style="{'border-color': sprint.color+' transparent transparent transparent', 'background-color':lightenColor}">
+        <label>Objetivos</label>
+    </div>
+    <div class="row objetivos" ng-style="{'background-color':lightenColor}">
+        <ul>
+            <li ng-repeat="obj in sprint.objetivos">{{obj}}</li>
+        </ul>
+    </div>
+    <div class="row ">
+        <table border="1">
+            <tbody>
+                <tr ng-repeat="hu in sprint.hus">
+                    <td class="text-center" ng-style="{'background-color': sprint.color, 'height': '1rem','width': '1.5rem','border-color':borderColor, color:'white'}">{{hu.idhu}}</td>
+                    <td ng-style="{'font-size': '9px','border-color':'lightgray'}">{{hu.descripcion}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="align-self-end">
+        <div class="row justify-content-center " ng-style="{'background-color':sprint.color,'height':'1.8rem'}">
+
+        </div>
+        <div class="row tile-obj justify-content-center" ng-style="{'border-color': sprint.color+' transparent transparent transparent', 'background-color':lightenColor}">
+            <label>Riesgos</label>
+        </div>
+        <div class="row objetivos" ng-style="{'background-color':lightenColor}">
+            <ul>
+                <li ng-repeat="obj in sprint.riesgos">{{obj}}</li>
+            </ul>
+        </div>
+    </div>
+
+</div>

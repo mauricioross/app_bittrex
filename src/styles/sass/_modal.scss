@@ -1,0 +1,132 @@
+/**
+ * css para alertas
+ * basada en modales de uibModal
+ */
+.modal.modal-alert {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal.modal-alert:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal.modal-alert .modal-dialog {
+  display: inline-block;
+  width: 500px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.modal.modal-alert .modal-content .title {
+    background-color: #c0392b;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 10px;
+    margin: 10px;
+}
+
+.modal.modal-alert .modal-content .message {
+    background-color: #fff;
+    color: #000;
+    font-size: 11px;
+    padding: 8px 20px;
+}
+
+.modal.modal-alert .modal-content .buttons {
+    border-top: 1px dashed #ccc;
+    padding: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.modal.modal-alert .modal-content .buttons button.aceptar {
+    border: none;
+    padding: 6px 10px;
+    background: #999;
+    color: #FFF;
+    background-image: -moz-linear-gradient(50% 0% 180deg, rgb(170, 170, 170) 0%, rgb(136, 136, 136) 100%);
+    background-image: -o-linear-gradient(180deg, rgb(170, 170, 170) 0%, rgb(136, 136, 136) 100%);
+    background-image: -ms-linear-gradient(180deg, rgb(170, 170, 170) 0%, rgb(136, 136, 136) 100%);
+    background-image: linear-gradient(180deg, rgb(170, 170, 170) 0%, rgb(136, 136, 136) 100%);
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.modal.modal-alert .modal-content .buttons button.cancelar {
+    border-radius: 4px;
+    background-color: #DDD;
+    border: none;
+    padding: 6px 10px;
+    color: #000;
+    font-size: 12px;
+    cursor: pointer;
+}
